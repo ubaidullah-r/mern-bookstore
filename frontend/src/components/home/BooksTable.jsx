@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineEdit } from "react-icons/ai";
 import { BsInfoCircle } from "react-icons/bs";
 import { MdOutlineAddBox, MdOutlineDelete } from "react-icons/md";
-import BooksTable from "../components/home/BooksTable";
+
 
 const BooksTable = ({ books }) => {
   return (
@@ -19,7 +19,7 @@ const BooksTable = ({ books }) => {
           </th>
           <th className="border border-slate-600 rounded-md">Operations</th>
         </tr>
-      </thead>
+      </thead>  
       <tbody>
         {books.map((book, index) => (
           <tr key={book._id} className="h-8">
